@@ -17,7 +17,7 @@ lutadores_lista_dic = [
     ]
 
 
-#BLA BLA BLA
+
 
 def linha_1_personalizavel(texto):
     tamanho = len(texto) + 6

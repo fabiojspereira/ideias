@@ -1,131 +1,6 @@
 # NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR
 # NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR
 
-lutadores_lista_dic = [
-    {"Nome": "Máximus", "Força": 5, "Dextreza": 8, "Velocidade": 3, "Energia": 1750},
-    {"Nome": "Commodus", "Força": 4, "Dextreza": 4, "Velocidade": 9, "Energia": 1250},
-    {"Nome": "Khal Drogo", "Força": 8, "Dextreza": 4, "Velocidade": 4, "Energia": 2000},
-    {"Nome": "Ryu", "Força": 7, "Dextreza": 5, "Velocidade": 4, "Energia": 1500},
-    {"Nome": "Ken", "Força": 7, "Dextreza": 4, "Velocidade": 5, "Energia": 1500},
-    {"Nome": "Aragorn", "Força": 4, "Dextreza": 9, "Velocidade": 6, "Energia": 1250},
-]
-
-
-for linha in range(0, 3):
-    print(f'{lutadores_lista_dic[linha]["Nome"]:<20}', end=' ')
-
-print()
-for linha in range(0, 3):
-    print(f'Força: {lutadores_lista_dic[linha]["Força"]:<13}', end=' ')
-
-print()
-for linha in range(0, 3):
-    print(f'Dextreza: {lutadores_lista_dic[linha]["Dextreza"]:<10}', end=' ')
-
-print()
-for linha in range(0, 3):
-    print(f'Velocidade: {lutadores_lista_dic[linha]["Velocidade"]:<8}', end=' ')
-
-print()
-for linha in range(0, 3):
-    print(f'Energia: {lutadores_lista_dic[linha]["Energia"]:<11}', end=' ')
-
-
-"""
-
-
-numero_lutador = 1
-lutador = 0
-for count in range (0, 2):
-    print("{}{:>30}{:>30}".format("LUTADOR", "LUTADOR", "LUTADOR"))
-    print("{}{:>30}{:>30}".format(numero_lutador, numero_lutador+1, numero_lutador+2))
-    print("{:<12}{:<18}{:<12}{:<18}{:<12}{:<18}".format("Nome", lutadores_lista_dic[0+lutador]["Nome"], "Nome", lutadores_lista_dic[1+lutador]["Nome"], "Nome", lutadores_lista_dic[2+lutador]["Nome"]))
-    print("{:<12}{:<18}{:<12}{:<18}{:<12}{:<18}".format("Força", lutadores_lista_dic[0+lutador]["Força"], "Força", lutadores_lista_dic[1+lutador]["Força"], "Força", lutadores_lista_dic[2+lutador]["Força"]))
-    print("{:<12}{:<18}{:<12}{:<18}{:<12}{:<18}".format("Dextreza", lutadores_lista_dic[0+lutador]["Dextreza"], "Dextreza", lutadores_lista_dic[1+lutador]["Dextreza"], "Dextreza", lutadores_lista_dic[2+lutador]["Dextreza"]))
-    print("{:<12}{:<18}{:<12}{:<18}{:<12}{:<18}".format("Velocidade", lutadores_lista_dic[0+lutador]["Velocidade"], "Velocidade", lutadores_lista_dic[1+lutador]["Velocidade"], "Velocidade", lutadores_lista_dic[2+lutador]["Velocidade"]))
-    print("{:<12}{:<18}{:<12}{:<18}{:<12}{:<18}".format("Energia", lutadores_lista_dic[0+lutador]["Energia"], "Energia", lutadores_lista_dic[1+lutador]["Energia"], "Energia", lutadores_lista_dic[2+lutador]["Energia"]))
-    lutador = 3
-    numero_lutador = 4
-    print()
-
-    #for coluna in range (0 , 4):
-        #print(coluna, end=' ')
-
-
-
-
-
-
-    print("LUTADOR")
-    print(linha+1)
-    print("{}{}".format("Nome",lutadores_lista_dic[0]["Nome"]))
-    print("{}{}".format("Força",lutadores_lista_dic[0]["Força"]))
-    print("{}{}".format("Dextreza",lutadores_lista_dic[0]["Dextreza"]))
-    print("{}{}".format("Velocidade",lutadores_lista_dic[0]["Velocidade"]))
-    print("{}{}".format("Energia",lutadores_lista_dic[0]["Energia"]))
-
-lista_chaves = list()
-lista_valores = list()
-
-
-#for chave in lutadores_lista_dic[0].keys():
-    #print(chave)
-    #lista_chaves.append(chave)
-for valor in lutadores_lista_dic[0].values():
-    #print(valor)
-    lista_valores.append(valor)
-    print(lista_valores)
-#print(lista_chaves)
-        #print(lista_chaves, lista_valores)
-
-
-
-#print(lista_chaves)
-#print(lista_valores)
-
-
-for linha in range(0, 3):
-    print(f'{lutadores_lista_dic[linha]["Nome"]:<20}', end=' ')
-
-print()
-for linha in range(0, 3):
-    print(f'Força: {lutadores_lista_dic[linha]["Força"]:<13}', end=' ')
-
-print()
-for linha in range(0, 3):
-    print(f'Dextreza: {lutadores_lista_dic[linha]["Dextreza"]:<10}', end=' ')
-
-print()
-for linha in range(0, 3):
-    print(f'Velocidade: {lutadores_lista_dic[linha]["Velocidade"]:<8}', end=' ')
-
-print()
-for linha in range(0, 3):
-    print(f'Energia: {lutadores_lista_dic[linha]["Energia"]:<11}', end=' ')
-
-
-
-
-
-
-print("{:<12}{:<15}{:<12}{:<15}{:<12}{:<15}".format("Nome", lutadores_lista_dic[0]["Nome"], "Nome", lutadores_lista_dic[1]["Nome"], "Nome", lutadores_lista_dic[2]["Nome"]  ))
-print("{:<12}{:<15}{:<12}{:<15}{:<12}{:<15}".format("Força", lutadores_lista_dic[0]["Força"], "Força", lutadores_lista_dic[1]["Força"], "Força", lutadores_lista_dic[2]["Força"]  ))
-print("{:<12}{:<15}{:<12}{:<15}{:<12}{:<15}".format("Dextreza", lutadores_lista_dic[0]["Dextreza"], "Dextreza", lutadores_lista_dic[1]["Dextreza"], "Dextreza", lutadores_lista_dic[2]["Dextreza"]  ))
-print("{:<12}{:<15}{:<12}{:<15}{:<12}{:<15}".format("Velocidade", lutadores_lista_dic[0]["Velocidade"], "Velocidade", lutadores_lista_dic[1]["Velocidade"], "Velocidade", lutadores_lista_dic[2]["Velocidade"]  ))
-print("{:<12}{:<15}{:<12}{:<15}{:<12}{:<15}".format("Energia", lutadores_lista_dic[0]["Energia"], "Energia", lutadores_lista_dic[1]["Energia"], "Energia", lutadores_lista_dic[2]["Energia"]  ))
-print()
-print()
-print("{}{}{}{}{}{}".format("Nome", lutadores_lista_dic[0]["Nome"], "Nome", lutadores_lista_dic[1]["Nome"], "Nome", lutadores_lista_dic[2]["Nome"]  ))
-print("{}{}{}{}{}{}".format("Força", lutadores_lista_dic[0]["Força"], "Força", lutadores_lista_dic[1]["Força"], "Força", lutadores_lista_dic[2]["Força"]  ))
-print("{}{}{}{}{}{}".format("Dextreza", lutadores_lista_dic[0]["Dextreza"], "Dextreza", lutadores_lista_dic[1]["Dextreza"], "Dextreza", lutadores_lista_dic[2]["Dextreza"]  ))
-print("{}{}{}{}{}{}".format("Velocidade", lutadores_lista_dic[0]["Velocidade"], "Velocidade", lutadores_lista_dic[1]["Velocidade"], "Velocidade", lutadores_lista_dic[2]["Velocidade"]  ))
-print("{}{}{}{}{}{}".format("Energia", lutadores_lista_dic[0]["Energia"], "Energia", lutadores_lista_dic[1]["Energia"], "Energia", lutadores_lista_dic[2]["Energia"]  ))
-
-for count in range
-
-
-
-
 
 
 numeros = ["VAZIO", "VAZIO", "VAZIO"]
@@ -174,7 +49,7 @@ print(f"\nA lista foi preenchida corretamente  {numeros}")
 
 
 
-
+"""
 def x(values):
     values[0] = 9
     values[1] = 5
