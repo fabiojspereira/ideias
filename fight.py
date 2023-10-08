@@ -17,7 +17,7 @@ lutadores_lista_dic = [
     ]
 
 
-
+TESTE
 
 def linha_1_personalizavel(texto):
     tamanho = len(texto) + 6
