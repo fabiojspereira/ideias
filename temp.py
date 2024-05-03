@@ -1,6 +1,111 @@
 # NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR
 # NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR
 
+cars_data = [
+
+    # gold
+    ['BMW X6', 5, 5, 'auto', 'suv', 'gold', True, 'https://purepng.com/public/uploads/large/purepng.com-bmw-x6-blue-carcarbmwvehicletransport-9615246630450hbgr.png'],
+    ['Mercedes GLE coupe', 5, 5, 'auto', 'suv', 'gold', True, 'https://www.mercedes-benz.pt/content/dam/hq/passengercars/cars/gle/gle-coupe-c167-fl-pi/modeloverview/01-2023/images/mercedes-benz-gle-coupe-c167-modeloverview-696x392-01-2023.png'],
+    ['Audi Q8', 5, 5, 'auto', 'suv', 'gold', True, 'https://www.pngmart.com/files/22/Audi-Q8-PNG-Isolated-Image.png'],
+    ['Jaguar I-Pace', 5, 5, 'auto', 'suv', 'gold', True, 'https://ymimg1.b8cdn.com/resized/car_model/7913/pictures/7416563/mobile_listing_main_Jaguar_I-Pace_2019__1_.png'],
+    ['Porsche Cayenee Coupe',5, 5, 'auto', 'suv', 'gold', True, 'https://www.pngmart.com/files/22/Porsche-Cayenne-PNG-Clipart.png'],
+    ['BWM i7', 5, 5, 'auto', 'sedan', 'gold', True, 'https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYfQn8N10tLhu1XzWVo7puMLWFmdkAj5DOPitIqZ8XgY1nTNIowJ4HO3zkyXq%25sGM8snpq6v6ODubLz2aKqfkYvjmB2fJj5DOP5Eagd%25kcWExHWpbl8FO2k3Hy2o24tXATQBrXpFkahlZ24riIqM8scpF4HvmnU0KiIFJG7dUABHvIT91QsO2JGvloRqCgpT9GsLxSQUilo90yWdBbHsLoACeV%25hJ0yLOEjkpqTACygN6nmmlOECUkw5O7sgNEbn%257b10UkNh5ucSVAbnkq83aBzOh5nmPXRYagq857Mrv1RUmP81D5Pixb7MPVY8%25MWh1DMztPOpeqVYDafuiwjmztYRS3Qc67aftxdXZiw1RSfWQxy%25%25VxdSeZLjYuzWQdjcnmj3aeZQ6KjPpXRjcZwB81vrx6Kc%252PVQ4WsKokGpc1Q8CBsJdoSWZ35uMwCRL'],
+    ['Audi e-Tron GT', 5, 5, 'auto', 'sedan', 'gold', True, 'https://www.electrifying.com/files/NFeDtk7gtILNVgt4/AudietronGT.png'],
+    ['Mercedes CLS', 5, 5, 'auto', 'sedan', 'gold', True, 'https://www.mercedes-benz.pt/content/dam/hq/passengercars/cars/cls/cls-coupe-c257-fl-pi/modeloverview/11-2022/images/mercedes-benz-cls-c257-modeloverview-696x392-11-2022.png'],
+    ['Jaguar F-Type', 2, 2, 'auto', 'sedan', 'gold', True,'https://freepngimg.com/thumb/jaguar/24597-2-jaguar-f-type.png'],
+    ['Porsche Taycan', 5, 5, 'auto', 'sedan', 'gold', True, 'https://file.kelleybluebookimages.com/kbb/base/evox/CP/15460/2024-Porsche-Taycan-front_15460_032_2400x1800_2Y.png'],
+
+    # silver
+    ['Nissan Qashqai', 5, 5, 'manual', 'suv', 'silver', True, 'https://www.greenncap.com/wp-content/uploads/nissan-qashqai-2022-0109.png'],
+    ['Peugeot 3008', 5, 5, 'manual', 'suv', 'silver', True, 'https://i.pinimg.com/originals/da/90/f0/da90f0319bd65df5051158e1d4bab041.png'],
+    ['Volvo XC60', 5, 5, 'manual', 'suv', 'silver', True, 'https://www.motortrend.com/uploads/sites/10/2019/08/2020-volvo-xc60-t5-momentum-4wd-suv-angular-front.png'],
+    ['Citroen C4', 5, 5, 'manual', 'suv', 'silver', True, 'https://www.citroen.pt/content/dam/citroen/master/b2c/models/new-c4-e/visualizer/front-view/New%20E-C4%20and%20C4_0MP00NWP_Blanc%20Banquise_FR_1280_720.png'],
+    ['Hyundai Tucson', 5, 5, 'manual', 'suv', 'silver', True, 'https://www.motortrend.com/uploads/sites/10/2019/11/2020-hyundai-tucson-sel-4wd-suv-angular-front.png'],
+    ['Toyota Corolla', 5, 5, 'manual', 'sedan', 'silver', True, 'https://www.toyotaotis.com.ph/wp-content/uploads/2017/04/Altis-Page-Home-image.png'],
+    ['Renault Talisman', 5, 5, 'manual', 'sedan', 'silver', True, 'https://www.chabe.com/wp-content/uploads/2020/06/Renault_Talisman.png'],
+    ['Peugeout 508', 5, 5, 'manual', 'sedan', 'silver', True, 'https://www.pngmart.com/files/22/Peugeot-508-PNG-Image.png'],
+    ['Hyundai Ioniq 6', 5, 5, 'manual', 'sedan', 'silver', True, 'https://www.motortrend.com/uploads/sites/10/2019/08/2020-ford-fusion-se-sedan-angular-front.png'],
+    ['DS 9', 5, 5, 'manual', 'sedan', 'silver', True, 'https://cdn.imagin.studio/getImage?customer=robinsandday&make=ds&modelFamily=ds9&modelRange=ds9&modelVariant=od&modelYear=2023&zoomType=fullscreen&steering=right&width=800&angle=01&paintId=pspc0165&fileType=png'],
+
+    # economic
+    ['Opel Astra', 3, 4, 'manual', 'sedan', 'economic', True, '0000'],
+    ['Seat Toledo', 5, 5, 'manual', 'sedan', 'economic', True, '0000'],
+    ['Fiat Tipo', 5, 5, 'manual', 'sedan', 'economic', True, '0000'],
+    ['Ford Fiesta', 5, 5, 'manual', 'sedan', 'economic', True, '0000'],
+    ['Renault Megane', 3, 5, 'manual', 'sedan', 'economic', True, '0000'],
+    ['Opel Corsa', 2, 2, 'manual', 'compact', 'economic', True, '0000'],
+    ['Seat Ibiza', 2, 2, 'manual', 'compact', 'economic', True, '0000'],
+    ['Fiat Cronos', 5, 5, 'manual', 'compact', 'economic', True, '0000'],
+    ['Ford Mondeo', 5, 5, 'manual', 'compact', 'economic', True, '0000'],
+    ['Renault Clio', 5, 5, 'manual', 'compact', 'economic', True, '0000'],
+
+]
+
+#print(len(cars_data))
+#print(cars_data[0][0])
+# print(f"NOME : {valor[0]:<22} {'CATEGORIA :':>15} {valor[5]:<7}")
+
+for valor in cars_data :
+    if valor[5] == "gold":
+        print(f"NOME : {valor[0]:<22} {'CATEGORIA :':>15} {valor[5]:<7}")
+
+    elif valor[5] == "silver":
+        print(f"NOME : {valor[0]:<22} {'CATEGORIA :':>15} {valor[5]:<7}")
+
+    else:
+       print(f"NOME : {valor[0]:<22} {'CATEGORIA :':>15} {valor[5]:<7}")
+
+
+
+
+
+""""
+for value in car_table.values:
+    # categoria
+    if category_filter and not vehicles_filter and not seats_filter:
+        if value[6] in category_filter:
+            new_table_car.append(value)
+
+    # veiculo
+    elif vehicles_filter and not category_filter and not seats_filter:
+        if value[5] in vehicles_filter:
+            new_table_car.append(value)
+
+    # assentos
+    elif seats_filter and not category_filter and not vehicles_filter:
+        if seats_filter:
+            new_table_car.append(value)
+
+        elif value[3] >= seats_filter:
+            new_table_car.append(value)
+
+    # categoria, veiculos
+    elif category_filter and vehicles_filter and not seats_filter:
+        if value[6] in category_filter and value[5] in vehicles_filter:
+            new_table_car.append(value)
+
+    # categoria, assentos
+    elif category_filter and seats_filter and not vehicles_filter:
+        if value[6] in category_filter and value[3] <= seats_filter:
+            new_table_car.append(value)
+
+    # assentos, veiculos
+    elif seats_filter and vehicles_filter and not category_filter:
+        if value[5] in vehicles_filter and seats_filter <= value[3]:
+            new_table_car.append(value)
+
+    # categoria, veiculos, assentos
+    elif category_filter and vehicles_filter and seats_filter:
+        if value[6] in category_filter and value[5] in vehicles_filter \
+                and value[3] <= seats_filter:
+            new_table_car.append(value)
+
+
+
+
+x = "sorry\n"
+print(x * 1000)
+
 
 
 numeros = ["VAZIO", "VAZIO", "VAZIO"]
@@ -49,7 +154,6 @@ print(f"\nA lista foi preenchida corretamente  {numeros}")
 
 
 
-"""
 def x(values):
     values[0] = 9
     values[1] = 5

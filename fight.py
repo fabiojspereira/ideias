@@ -7,17 +7,6 @@ def barra_de_energia_cinza(qtd):
     print("\033[1;37m█\033[m" * qtd)
 
 
-lutadores_lista_dic = [
-    {"Nome": "Máximus", "Força": 5, "Dextreza": 8, "Velocidade": 3, "Energia": 100},
-    {"Nome": "Commodus", "Força": 4, "Dextreza": 4, "Velocidade": 9, "Energia": 100},
-    {"Nome": "Khal Drogo", "Força": 8, "Dextreza": 4, "Velocidade": 3, "Energia": 100},
-    {"Nome": "Ryu", "Força": 9, "Dextreza": 5, "Velocidade": 4, "Energia": 100},
-    {"Nome": "Ken", "Força": 8, "Dextreza": 4, "Velocidade": 5, "Energia": 100},
-    {"Nome": "Aragorn", "Força": 4, "Dextreza": 9, "Velocidade": 6, "Energia": 100},
-    ]
-
-
-
 def linha_1_personalizavel(texto):
     tamanho = len(texto) + 6
     print(f"{'*' * tamanho}")
@@ -58,7 +47,17 @@ def gerador_ataque(força, velocidade):
         print(f"Nenhum dano causado : {força_do_golpe}")
         return força_do_golpe
 
-barra_de_energia_cinza(10)
+
+lutadores_lista_dic = [
+    {"Nome": "Máximus", "Força": 5, "Dextreza": 8, "Velocidade": 3, "Energia": 100},
+    {"Nome": "Commodus", "Força": 4, "Dextreza": 4, "Velocidade": 9, "Energia": 100},
+    {"Nome": "Khal Drogo", "Força": 8, "Dextreza": 4, "Velocidade": 3, "Energia": 100},
+    {"Nome": "Ryu", "Força": 9, "Dextreza": 5, "Velocidade": 4, "Energia": 100},
+    {"Nome": "Ken", "Força": 8, "Dextreza": 4, "Velocidade": 5, "Energia": 100},
+    {"Nome": "Aragorn", "Força": 4, "Dextreza": 9, "Velocidade": 6, "Energia": 100},
+    ]
+
+
 linha_1_personalizavel(" BATALHA ENTRE HERÓIS 1.0 ")
 
 continua_01 = True
