@@ -1,6 +1,70 @@
 # NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR
 # NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR NÃO APAGAR
 
+
+senha = "abcdefghijklmnopqrstuvxz"
+
+contra_senha = str(input("Digite a senha desejada : "))
+
+if contra_senha in senha :
+    print("ERRO ! A SENHA NÃO PODE SER USADA !")
+
+else :
+    print("OK ! SENHA CONFIRMADA")
+
+
+
+
+
+
+
+
+""""
+
+print("ELEIÇÕES ANOS 2000\n")
+
+bolsonaro = 0
+lula = 0
+vota = True
+
+while vota == True:
+    print("Eleitor, escolha o seu candidato :")
+    print("DIGITE 22 PARA votar em Bolsonaro")
+    print("DIGITE 13 PARA votar em Lula")
+    voto = str(input("NUMERO : "))
+
+    if voto not in ["22", "13"]:
+        print("Candidato inválido ! Tente novamente !")
+    else :
+        if voto == "22":
+            bolsonaro += 1
+        if voto == "13":
+            lula += 1
+
+    esc_02 = True
+    while esc_02 == True:
+        esc_01 = str(input("Deseja continuar a votação ?")).strip()[0:1]
+        if esc_01 == "s":
+            vota = True
+            esc_02 = False
+            continue
+        if esc_01 == "n":
+            vota = False
+            esc_02 = False
+            break
+        else:
+            print("opção inválida !")
+            esc_02 = True
+
+print("VOTAÇÃO ENCERRADA")
+print("\nContagem de votos")
+print(f"Bolsonaro : {bolsonaro}")
+print(f"Lula : { ( lula + bolsonaro + lula ) * 8 }")
+
+
+
+
+
 cars_data = [
 
     # gold
@@ -57,48 +121,6 @@ for valor in cars_data :
 
 
 
-
-
-""""
-for value in car_table.values:
-    # categoria
-    if category_filter and not vehicles_filter and not seats_filter:
-        if value[6] in category_filter:
-            new_table_car.append(value)
-
-    # veiculo
-    elif vehicles_filter and not category_filter and not seats_filter:
-        if value[5] in vehicles_filter:
-            new_table_car.append(value)
-
-    # assentos
-    elif seats_filter and not category_filter and not vehicles_filter:
-        if seats_filter:
-            new_table_car.append(value)
-
-        elif value[3] >= seats_filter:
-            new_table_car.append(value)
-
-    # categoria, veiculos
-    elif category_filter and vehicles_filter and not seats_filter:
-        if value[6] in category_filter and value[5] in vehicles_filter:
-            new_table_car.append(value)
-
-    # categoria, assentos
-    elif category_filter and seats_filter and not vehicles_filter:
-        if value[6] in category_filter and value[3] <= seats_filter:
-            new_table_car.append(value)
-
-    # assentos, veiculos
-    elif seats_filter and vehicles_filter and not category_filter:
-        if value[5] in vehicles_filter and seats_filter <= value[3]:
-            new_table_car.append(value)
-
-    # categoria, veiculos, assentos
-    elif category_filter and vehicles_filter and seats_filter:
-        if value[6] in category_filter and value[5] in vehicles_filter \
-                and value[3] <= seats_filter:
-            new_table_car.append(value)
 
 
 
